@@ -41,23 +41,25 @@
       width: 200px;
       transition: transform 0.2s;
       box-sizing: border-box;
-    }
-    .card:hover { transform: scale(1.05); cursor: pointer; }
-    .card-link {
-      display: block;
+      cursor: pointer;
+      text-align: center;
       color: #ff4c4c;
       font-weight: bold;
       text-decoration: none;
-      padding: 10px 15px 20px;
-      text-align: center;
     }
-    .card-link:hover { text-decoration: underline; }
-    .card-link img {
+    .card:hover { transform: scale(1.05); }
+    .card img {
       width: 100%;
       height: 120px;
       object-fit: cover;
       border-radius: 8px 8px 0 0;
       display: block;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 0.9em;
+      color: #ff9999;
+      margin: 0 10px 15px;
     }
     footer {
       background-color: #8b0000;
@@ -80,6 +82,10 @@
       width: 100px;
       height: auto;
       display: block;
+      margin: 0 auto;
+    }
+    #rato-container a, #cachorro-container a {
+      text-decoration: none;
     }
     #rato-container a span, #cachorro-container a span {
       margin-top: 5px;
@@ -87,9 +93,6 @@
       font-weight: bold;
       color: #ff9999;
       display: block;
-    }
-    #rato-container a, #cachorro-container a {
-      text-decoration: none;
     }
     #rato-container a:hover span, #cachorro-container a:hover span {
       text-decoration: underline;
@@ -101,15 +104,19 @@
   <header>Meus Jogos</header>
 
   <main class="container">
-    <a href="https://slowroads.io/" class="card card-link" target="_blank">
+    <a href="https://slowroads.io/" class="card" target="_blank" rel="noopener noreferrer">
       <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Entrar no jogo CAR" />
       Entrar CAR
+      <p class="description">Jogo de direção, sem fim</p>
     </a>
-    <a href="https://deriky2019.github.io/batata/projetos/QUIZ'S/quiz-games/quiz-games_principal.html" class="card card-link" target="_blank">
+
+    <a href="https://deriky2019.github.io/batata/projetos/QUIZ'S/quiz-games/quiz-games_principal.html" class="card" target="_blank" rel="noopener noreferrer">
       <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Entrar no QUIZ 1" />
       Entrar QUIZ 1
+      <p class="description">Teste seus conhecimentos em perguntas divertidas</p>
     </a>
-    <a href="#" class="card card-link">
+
+    <a href="#" class="card">
       <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Entrar" />
       Entrar
     </a>
@@ -117,14 +124,14 @@
 
   <div id="rato-container">
     <img src="https://cdn-icons-png.flaticon.com/512/1998/1998592.png" alt="Rato" />
-    <a href="https://www.instagram.com/simonjr_011?igsh=NjV4dWs0OXo2dnA=" target="_blank">
+    <a href="https://www.instagram.com/simonjr_011?igsh=NjV4dWs0OXo2dnA=" target="_blank" rel="noopener noreferrer">
       <span>PKsimon</span>
     </a>
   </div>
 
   <div id="cachorro-container">
     <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Cachorro" />
-    <a href="https://deriky2019.github.io/batata/projetos/pessoal/pessoal.html" target="_blank">
+    <a href="https://deriky2019.github.io/batata/projetos/pessoal/pessoal.html" target="_blank" rel="noopener noreferrer">
       <span>WTDeriky</span>
     </a>
   </div>
@@ -132,4 +139,4 @@
   <footer>&copy; 2025 - Seu Site de Jogos</footer>
 
 </body>
-  </html>
+</html>
