@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meus Jogos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #1c1c1c, #3b0000);
+      color: white;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #8b0000;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    main.container {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border: 2px solid #8b0000;
+      border-radius: 10px;
+      width: 200px;
+      transition: transform 0.2s;
+      box-sizing: border-box;
+    }
+    .card:hover { transform: scale(1.05); cursor: pointer; }
+    .card-link {
+      display: block;
+      color: #ff4c4c;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 15px 20px;
+      text-align: center;
+    }
+    .card-link:hover { text-decoration: underline; }
+    .card-link img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+      display: block;
+    }
+    footer {
+      background-color: #8b0000;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+    }
+    #rato-container, #cachorro-container {
+      position: fixed;
+      text-align: center;
+      z-index: 9999;
+    }
+    #rato-container { bottom: 70px; right: 20px; }
+    #cachorro-container { bottom: 70px; left: 20px; }
+    #rato-container img, #cachorro-container img {
+      width: 100px;
+      height: auto;
+      display: block;
+    }
+    #rato-container a span, #cachorro-container a span {
+      margin-top: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #ff9999;
+      display: block;
+    }
+    #rato-container a, #cachorro-container a {
+      text-decoration: none;
+    }
+    #rato-container a:hover span, #cachorro-container a:hover span {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Meus Jogos</header>
+
+  <main class="container">
+    <a href="https://slowroads.io/" class="card card-link" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Entrar no jogo CAR" />
+      Entrar CAR
+    </a>
+    <a href="https://deriky2019.github.io/batata/projetos/QUIZ'S/quiz-games/quiz-games_principal.html" class="card card-link" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Entrar no QUIZ 1" />
+      Entrar QUIZ 1
+    </a>
+    <a href="#" class="card card-link">
+      <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Entrar" />
+      Entrar
+    </a>
+  </main>
+
+  <div id="rato-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/1998/1998592.png" alt="Rato" />
+    <a href="https://www.instagram.com/simonjr_011?igsh=NjV4dWs0OXo2dnA=" target="_blank">
+      <span>PKsimon</span>
+    </a>
+  </div>
+
+  <div id="cachorro-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Cachorro" />
+    <a href="https://deriky2019.github.io/batata/projetos/pessoal/pessoal.html" target="_blank">
+      <span>WTDeriky</span>
+    </a>
+  </div>
+
+  <footer>&copy; 2025 - Seu Site de Jogos</footer>
+
+</body>
+  </html>
